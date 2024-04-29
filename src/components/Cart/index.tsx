@@ -56,9 +56,9 @@ const CartItems = () => {
                             <h2>Carrinho <br /> de compras</h2>
                             <img className='closeIcon' src={img} alt="" onClick={() => handleClose()} />
                         </TitleAndClose>
-                        <ul>
+                        <ul className='data-test-ul'>
                             {items.map((item: CartItem) => (
-                                <li className='listProducts' key={item.id}>
+                                <li className='data-test-list' key={item.id}>
                                     <CardsItems>
                                         <CloseCart>
                                             <img className='photo-apple' src={item.photo} alt={item.name} />

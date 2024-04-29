@@ -16,12 +16,12 @@ const Header = () => {
         <Container>
             <PageHeader>
                 <FirstDivHeader>
-                    <TitlePage>MKS</TitlePage>
+                    <TitlePage className="data-test-name">MKS</TitlePage>
                     <p>Sistemas</p>
                 </FirstDivHeader>
                 <SecondaryDivHeader>
                     <a onClick={openCart}>
-                        <img src={CartImage} alt="CartImage" /> {items.length}
+                        <img className="data-test-cart" src={CartImage} alt="CartImage" /> {items.length}
                     </a>
                 </SecondaryDivHeader>
             </PageHeader>
